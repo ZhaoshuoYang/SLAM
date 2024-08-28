@@ -11,6 +11,9 @@ pip install -r requirements.txt
 ```
 *** ***For each image and mask pair used for training, validation, or testing with SLAM, their names should match. Furthermore, the images should be in `PNG` format, while the masks should be in `NumPy` format.*** ***
 # Start with SAM
+Click the links below to download the checkpoint for the corresponding model type.
+- **`default` or `vit_h`: [ViT-H SAM model.](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth)**
+
 Additionally, masks can be generated for images from the command line:
 ```python
 cd sam
