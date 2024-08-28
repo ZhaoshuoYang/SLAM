@@ -1,4 +1,4 @@
-# SLAM: Segment overlapping objects with SLIME and SAM
+# SLAM: Single-sample instance segmentation with SLIME and SAM
 ![image](https://github.com/user-attachments/assets/252e3d93-bb06-4979-93d9-436792f29126)
 
 This is a project based on SLIME and SAM for single-sample overlap image segmentation. Looking forward to helping you!
