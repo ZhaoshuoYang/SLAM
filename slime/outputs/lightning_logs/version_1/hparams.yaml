@@ -1,0 +1,38 @@
+attention_layers_to_use:
+- up_blocks[1].attentions[0].transformer_blocks[0].attn2
+- up_blocks[1].attentions[1].transformer_blocks[0].attn2
+- up_blocks[1].attentions[2].transformer_blocks[0].attn2
+- up_blocks[2].attentions[0].transformer_blocks[0].attn2
+- up_blocks[2].attentions[1].transformer_blocks[0].attn2
+- up_blocks[3].attentions[0].transformer_blocks[0].attn1
+- up_blocks[3].attentions[1].transformer_blocks[0].attn1
+- up_blocks[3].attentions[2].transformer_blocks[0].attn1
+batch_size: 1
+checkpoint_dir: ./outputs/checkpoints/version_0
+dataset_name: sample
+epochs: 200
+gpu_id: 0
+lr: 0.1
+masking: patched_masking
+min_crop_ratio: 0.8
+num_patchs_per_side: 2
+optimizer: Adam
+output_dir: outputs
+part_names: null
+patch_size: 400
+patch_threshold: 0.2
+save_test_predictions: true
+sd_loss_coef: 0.005
+self_attention_loss_coef: 1.0
+test_data_dir: ./toothbrush
+test_mask_size: 512
+test_t:
+- 100
+text_prompt: null
+train: false
+train_data_dir: null
+train_mask_size: 64
+train_t:
+- 5
+- 100
+val_data_dir: null
