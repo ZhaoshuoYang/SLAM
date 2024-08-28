@@ -1,5 +1,7 @@
 # SLAM: Segment overlapping objects with SLIME and SAM
 ![image](https://github.com/user-attachments/assets/252e3d93-bb06-4979-93d9-436792f29126)
+
+This is a project based on SLIME and SAM for single-sample overlap image segmentation. Looking forward to helping you!
 # Setup
 To begin using SLAM, you first need to create a virtual environment and install the dependencies using the following commands:
 ```python
@@ -11,7 +13,7 @@ pip install -r requirements.txt
 # Start with SAM
 Additionally, masks can be generated for images from the command line:
 ```python
-cd SAM
+cd sam
 python scripts/amg.py --checkpoint checkpoints/sam_vit_h_4b8939.pth --model-type vit_h --input ./toothbrush --output ./output
 ```
 # SLiMe training
@@ -30,5 +32,17 @@ To use the trained text embeddings for testing, run this command:
 python -m src.main --dataset sample --checkpoint_dir ./outputs/checkpoints/version_0 --test_data_dir ./dataset/toothbrush/mytest --save_test_predictions
 ```
 ![image](https://github.com/user-attachments/assets/b2428632-676d-4851-ac5e-bf540caedd11)
-
+# SLAM post-processing
+Next, we will fuse the two results through post-processing operations to obtain the SLAM final result.
+```python
+python post-processing.py
+```
+Then, we can use SSIM to calculate the similarity between the segmented object and the target object.
+```python
+python SSIM.py
+```
+Finally, we can see the result of the partitioning of the instance.
+```python
+python show.py
+```
 ![image](https://github.com/user-attachments/assets/d2a41a41-dcc7-400a-8124-012e34b8a187)
