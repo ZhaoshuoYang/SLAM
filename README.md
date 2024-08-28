@@ -39,7 +39,7 @@ python post-processing.py
 ```
 Then, we can use SSIM to calculate the similarity between the segmented object and the target object.
 ```python
-python SSIM.py
+python ssim.py
 ```
 Finally, we can see the result of the partitioning of the instance.
 ```python
