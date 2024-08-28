@@ -47,7 +47,7 @@ python show.py
 ```
 ![image](https://github.com/user-attachments/assets/d2a41a41-dcc7-400a-8124-012e34b8a187)
 # Citation
-
+If you use SLAM in your research, please use the following BibTeX entry.
 ``` bibtex
 @article{yang2024slam,
   title={SLAM: Segment overlapping objects with SLIME and SAM},
