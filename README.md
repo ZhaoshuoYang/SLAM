@@ -1,2 +1,1 @@
-# SLAM
-Segment overlapping objects with SLIME and SAM
+# SLAM: Segment overlapping objects with SLIME and SAM
