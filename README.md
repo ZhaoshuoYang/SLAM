@@ -46,3 +46,12 @@ Finally, we can see the result of the partitioning of the instance.
 python show.py
 ```
 ![image](https://github.com/user-attachments/assets/d2a41a41-dcc7-400a-8124-012e34b8a187)
+# Citation
+
+``` bibtex
+@article{yang2024slam,
+  title={SLAM: Segment overlapping objects with SLIME and SAM},
+  author={Zhaoshuo Yang},
+  year={2024}
+}
+```
