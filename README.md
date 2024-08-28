@@ -1,4 +1,5 @@
 # SLAM: Segment overlapping objects with SLIME and SAM
+![image](https://github.com/user-attachments/assets/252e3d93-bb06-4979-93d9-436792f29126)
 # Setup
 To begin using SLAM, you first need to create a virtual environment and install the dependencies using the following commands:
 ```python
@@ -18,7 +19,7 @@ First, create a new folder (e.g., `slam/slime/data/train`) and place the trainin
 
 Next, place the test images in a separate folder (e.g., `slam/slime/data/test`) and specify the path to this folder using `--test_data_dir`. Additionally, you should define a name for the segmented parts within the training images to be used with the `--parts_to_return` argument, including the background. For instance, if you have segmented the brushtooth, you should set `--parts_to_return` to `"background brushtooth"`.
 
-Finally, execute the following command within the slime folder (the main folder obtained after cloning):
+Finally, execute the following command (the main folder obtained after cloning):
 ```python
 cd ../slime
 python -m src.main --dataset sample --part_names background toothbrush --train_data_dir ./datasets/toothbrush/train_1 --val_data_dir ./datasets/toothbrush/val --test_data_dir ./datasets/toothbrush/test --train 
@@ -28,3 +29,6 @@ To use the trained text embeddings for testing, run this command:
 ```python
 python -m src.main --dataset sample --checkpoint_dir ./outputs/checkpoints/version_0 --test_data_dir ./dataset/toothbrush/mytest --save_test_predictions
 ```
+![image](https://github.com/user-attachments/assets/b2428632-676d-4851-ac5e-bf540caedd11)
+
+![image](https://github.com/user-attachments/assets/d2a41a41-dcc7-400a-8124-012e34b8a187)
